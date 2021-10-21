@@ -95,9 +95,9 @@ ALLOWED_HOSTS='localhost'
 DATABASE_URL=sqlite:///db.sqlite3
 
 #通知設定を使用しない場合は不要
-EMAIL_HOST_USER='任意のGmailアドレス'
-EMAIL_HOST_PASSWORD='設定したGmailのパスワード'
-DEFAULT_FROM_EMAIL='任意のGmailアドレス'
+EMAIL_HOST_USER='dummy@gmail.com'
+EMAIL_HOST_PASSWORD='password'
+DEFAULT_FROM_EMAIL='dummy@gmail.com'
 
 #bbs > views.py
 #Googleドライブを使用しない場合は不要
