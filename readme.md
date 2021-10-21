@@ -34,22 +34,18 @@ URL : https://katsurao-diary.com
 3. プロフィール情報を登録する
 4. 会員限定ページに移動する
 ![function1](https://user-images.githubusercontent.com/77391181/138307239-f3cfe657-0880-47ce-a967-ba497398d05b.gif)
-<br>
-<br>
+
 ## 2. データベース登録
 1. スーパーユーザーで管理サイトにログインする
 2. NEWS/WORKS/ESSAY を登録する
 3. NEWS/WORKS/ESSAYページに反映される
 ![function2](https://user-images.githubusercontent.com/77391181/138310045-ba7e3e65-42a3-49d1-b1cc-25c9d29a4cc3.gif)
-<br>
-<br>
 ## 3. YouTubeデータ取得
 1. 一般ユーザーで /manage にログインする
 2. 「YouTube更新」ボタンを押す
 3. 取得された動画がMOVIEページに反映される
 ![function3](https://user-images.githubusercontent.com/77391181/138308752-d225eeeb-6875-4733-9576-1cec862d764c.gif)
-<br>
-<br>
+
 ## 4. BBS
 1. 一般ユーザーで「会員限定ページ」にログインする
 2. 「通知設定」からメール通知を設定をする
@@ -59,6 +55,7 @@ URL : https://katsurao-diary.com
 6. 任意の投稿にコメントをつける
 7. 投稿/コメント/リアクション は設定に応じて通知される
 ![function4](https://user-images.githubusercontent.com/77391181/138312395-b36a0c6d-aae6-4c1c-9e8d-979fe3dca6d9.gif)
+
 <br>
 <br>
 
