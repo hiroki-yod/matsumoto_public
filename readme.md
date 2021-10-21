@@ -1,5 +1,5 @@
 # アプリケーション名
-**松本家通信 &emsp;The Matsumoto’s House Newsletter**
+**松本家通信 &emsp;The Matsumoto’s House Newsletter**  
 URL : https://katsurao-diary.com
 <br>
 <br>
