@@ -74,13 +74,13 @@ $ git clone git@github.com:hiroki-yod/matsumoto_public.git
 ## 3. パッケージのインストール
 次のパッケージをインストールしてください。
 ```console
-$ pip install Django
-$ pip install django-environ                #環境変数
-$ pip install django_bootstrap5             #CSS
-$ pip install django-widget-tweaks          #CSS
-$ pip install google-api-python-client      #YouTube Data API
-$ pip install Pillow                        #画像
-$ pip install isodate                       #時間
+pip install Django
+pip install django-environ                #環境変数
+pip install django_bootstrap5             #CSS
+pip install django-widget-tweaks          #CSS
+pip install google-api-python-client      #YouTube Data API
+pip install Pillow                        #画像
+pip install isodate                       #時間
 ```
 
 ## 4. 環境変数の設定
