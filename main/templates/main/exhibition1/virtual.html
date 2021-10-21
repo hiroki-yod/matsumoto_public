@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>バーチャル松本家 | 第1回松本家展</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/style2.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'main/images/favicon.png' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+  <body>
+    <div class="ex-wrapper">
+
+      <div class="slider-ctr">
+        <figure class="slide display"><a href="{% url 'main:guide' %}">
+          <img src="{% static 'main/images/white.jpg' %}" alt="White" />
+          <figcaption>
+              <div class="guide">作品一覧に戻る</div>
+          </figcaption>
+        </a></figure>
+        <figure class="slide display"><img src="{% static 'main/images/virtual/vp6.png' %}" alt="Photo" />
+        </figure>
+        <figure class="slide display"><img src="{% static 'main/images/virtual/vp5.png' %}" alt="Photo" />
+        </figure>
+        <figure class="slide display"><img src="{% static 'main/images/virtual/vp4.png' %}" alt="Photo" />
+        </figure>
+        <figure class="slide display"><img src="{% static 'main/images/virtual/vp3.png' %}" alt="Photo" />
+        </figure>
+        <figure class="slide display"><img src="{% static 'main/images/virtual/vp2.png' %}" alt="Photo" />
+        </figure>
+        <figure class="slide display"><img src="{% static 'main/images/virtual/vp1.png' %}" alt="Photo" />
+        </figure>
+        <figure class="slide"><img src="{% static 'main/images/virtual/minecraft2.jpg' %}" alt="explain2" />
+        </figure>
+        <iframe class="slide display" src="https://www.youtube.com/embed/stXqEPm6pUs?rel=0&modestbranding=0&showinfo=0&fs=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <figure class="slide"><img src="{% static 'main/images/virtual/minecraft1.jpg' %}" alt="explain1" />
+        </figure>
+      </div>
+
+      <div class="slider-control">
+          <div class="control prev disabled">
+              <div class="icon ion-chevron-left"><</div>
+          </div>
+          <div class="control next">
+              <div class="icon ion-chevron-right">></div>
+          </div>
+      </div>
+
+    </div>
+  <script type="text/javascript" src="{% static 'main/js/js2.js' %}"></script>
+  </body>
+</html>

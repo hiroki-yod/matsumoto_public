@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+/*共通部分*/
+html{
+  font-size: 100%;
+}
+header{
+  background-color: #000;
+}
+body{
+  background-image: url(../images/home-bg.jpg);
+  background-size: contain;
+  background-position: center top;
+  background-repeat: repeat;
+  font-family: "Noto Serif JP","Merriweather",sans-serif;
+  line-height: 1.7;
+  color: #FFF;
+}
+a{
+  text-decoration: none;
+  color: #FFF;
+}
+img{
+  max-width: 100%;
+}
+.big-bg{
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+
+/*HEADER*/
+.logo{
+  font-family: 'Noto Serif JP',serif;
+  width: 720px;
+  font-weight: 250;
+  margin: 14px 0px;
+  color: #FFF;
+}
+.logo-line{
+  color: #a9a9a9;
+}
+.summer{
+  color: #219ddd;
+}
+
+.main-nav{
+  display: flex;
+  font-size: 1.25rem;
+  font-family: 'Merriweather',serif;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+.main-nav li{
+  margin-left: 36px;
+}
+.main-nav a{
+  color: #FFF;
+}
+.main-nav a:hover{
+  color: #999933;
+}
+
+.page-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper1{
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/*フッター*/
+footer{
+  background: #000;
+  text-align: center;
+  padding: 26px 0;
+}
+footer p{
+  color: #FFF;
+  font-size: 0.875rem;
+}
+
+
+/*案内 ヘッダー*/
+.page-title{
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: 'Noto Serif JP',serif;
+  padding-top: 30px;
+  color: #000;
+}
+
+
+/*第1回松本家展*/
+.explanation{
+  display: flex;
+}
+.ex-poster{
+  width: 40%;
+  margin-left: 50px;
+}
+.ex-sentence{
+  width: 60%;
+  margin-left: 30px;
+}
+.ex-sentence p{
+  color: #000;
+  text-align: left;
+  font-family: 'Noto Serif JP',serif;
+}
+.ex-sentence1{
+  font-size: 0.75rem;
+}
+.ex-sentence2{
+  margin-left: 30px;
+  margin-top: 35px;
+}
+.ex-button1{
+  font-size: 1.375rem;
+  font-family: 'Noto Serif JP',serif;
+  background: #666600;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 24px;
+  margin:75px 30px 0px 30px;
+  text-align: center;
+}
+.ex-button1:hover{
+  background: #999933;
+}
+.info-block{
+  display: flex;
+}
+
+
+/*ABOUT本文*/
+.about-contents{
+  justify-content:center;
+  width: 800px;
+  margin: 0 auto;
+  background-color: #FFF;
+  padding-bottom: 40px;
+}
+
+.block-title{
+  position: relative;
+  padding-top: 4px;
+  margin-bottom: 40px;
+  font-family: 'Noto Serif JP',serif;
+  font-weight: 300;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+.block-contents{
+  justify-content:center;
+  display: block;
+}
+.about-sentence1{
+  width:80%;
+  color: #000;
+  text-align: left;
+  margin: 0 auto;
+  font-family: 'Noto Serif JP',serif;
+}
+.about-sentence2{
+  color: #000;
+  font-family: 'Noto Serif JP',serif;
+}
+.about-sentence1 p{
+  margin-bottom: 35px;
+}
+.about-hr{
+  margin-bottom: 35px;
+}
+.sub-title0{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.sub-title{
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-top: 60px;
+}
+.return-index{
+  text-align: center;
+}
+.return-index a{
+  color: #808080;
+  font-weight: 100;
+}
+.return-index a:hover{
+  color: #DDDDDD;
+}
+
+.benya{
+  text-align: center;
+}
+.benya img{
+  width: 60%;
+}
+
+.homerosu{
+  display: flex;
+}
+.homerosu{
+  width: 50%;
+}
+.th-photo{
+  text-align: center;
+  margin: 20px 0px;
+}
+.th-photo img{
+  width: 90%;
+}
+
+/*モバイル版*/
+@media (max-width:800px) {
+  .about-contents{
+    justify-content:center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding-bottom: 40px;
+  }
+  .page-title{
+    text-align: center;
+    width: 80%;
+    margin:0 auto 30px;
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: 'Noto Serif JP',serif;
+    padding-top: 30px;
+    color: #000;
+  }
+  .logo-line{
+    display: none;
+  }
+}

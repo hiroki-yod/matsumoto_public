@@ -1,0 +1,8 @@
+松本家通信であなたの投稿にいいねがありました。
+https://katsurao-diary.com/
+
+【いいねした人】
+{{ user.penname }}
+
+【投稿内容】
+{{ bbs.description | linebreaksbr }}

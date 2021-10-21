@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>展示案内 | 第1回松本家展</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/style2.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'main/images/favicon.png' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+  <body id="guide">
+    <div class="wrapper-g">
+      <div class="pv-div">
+            <video class="pv" loop muted autoplay src="{% static 'main/images/guide/pv-first.mp4' %}" autoplay poster="posterimage.jpg">
+        </video>
+      </div>
+
+      <h1 class="guide-title">展示案内</h1>
+      <div class="guide-div">
+        <p class="guide-sentence">
+          「第1回松本家展 -現在地-」オンライン展示会場にご来訪いただきありがとうございます。
+          <br><br>
+          本会場では、5つの作品と1冊の冊子を展示しております。
+          すべての展示物はお使いのスマートフォン・タブレット・PC上から無料でご鑑賞いただくことができます。
+          画面のサイズによっては作品が小さく表示される場合がございます。
+          スマートフォン・タブレットをご利用の場合は作品によって画面の向きを変えていただけますと幸いです。
+          また、読み込みに時間がかかる場合がございます。作品ページでしばらくお待ちいただけると幸いです。
+          展示の鑑賞順に指定はございませんので、さまざまな方法で記録された松本家を是非お好きな順番でご覧ください。
+          <br><br>
+          復興交流館あぜりあ(福島県葛尾村)での展示期間は8月27日(金)~29日(日)ですが、オンライン展示は展示期間後も継続する予定です。
+        </p>
+      </div>
+
+      <h1 class="guide-title" id="list">作品一覧</h1>
+      <div class="work-div">
+        <div class="work-grid">
+
+          <div class="work-element"><a href="{% url 'main:photo' %}" style="text-decoration:none;">
+            <h2 class="work-title">写真作品</h2>
+            <p class="work-explain">
+              6月初旬に松本家に滞在した際に撮影された写真を集めた。
+              いずれの写真も現在の松本家とそれを取り巻く環境、
+              あるいはそこに関わる自分たちの姿が滞在者自身の手で記録されている。
+            </p>
+            <div class="work-img">
+              <img src="{% static 'main/images/photo/sp1.png' %}" alt="">
+            </div>
+          </a></div>
+
+          <div class="work-element"><a href="{% url 'main:model' %}" style="text-decoration:none;">
+            <h2 class="work-title">松本家模型</h2>
+            <p class="work-explain">
+              松本家とその周辺敷地を縮尺1/200の模型で表現した。
+              模型は現在ある建物と松本家の敷地の一部で構成される。
+              色のない白模型は現在地において松本家計画が始まったばかりであることを示す。
+            </p>
+            <div class="work-img">
+              <img src="{% static 'main/images/model/model1.png' %}" alt="">
+            </div>
+          </a></div>
+
+          <div class="work-element"><a href="{% url 'main:virtual' %}" style="text-decoration:none;">
+            <h2 class="work-title">バーチャル松本家</h2>
+            <p class="work-explain">
+              松本家をゲーム『マインクラフト』のバーチャル空間上に再現した。
+              ゲームの中では現実では不可能な改変も可能だ。
+              作者の願望の込められたバーチャル松本家は事実の記録を超えた物語を見せてくれる。
+            </p>
+            <div class="work-img">
+              <img src="{% static 'main/images/virtual/vp1.png' %}" alt="">
+            </div>
+          </a></div>
+
+          <div class="work-element"><a href="{% url 'main:movie2' %}" style="text-decoration:none;">
+            <h2 class="work-title">松本家滞在記録</h2>
+            <p class="work-explain">
+              現在の松本家の様子を収めた映像を2本立てでお送りする。
+              1本目の映像では松本家で育った松本隼也さんが敷地内を散策しながら子供時代から今までを回想する。
+              2本目の映像は今松本家に滞在する若者たちの姿を記録する。
+            </p>
+            <div class="work-img">
+              <img src="{% static 'main/images/guide/movie.jpg' %}" alt="">
+            </div>
+          </a></div>
+
+          <div class="work-element"><a href="{% url 'main:session' %}" style="text-decoration:none;">
+            <h2 class="work-title">トークセッション</h2>
+            <p class="work-explain">
+              第1回松本家展出品者と冊子寄稿者によるトークセッションをお送りする。
+              出演者の口から語られる展示作品と寄稿文の解説はそれぞれの視点から松本家のいまを見る物語だ。
+              トークセッションではいくつかの物語が交差することになる。
+            </p>
+            <div class="work-img">
+              <img src="{% static 'main/images/guide/session.png' %}" alt="">
+            </div>
+          </a></div>
+
+          <div class="work-element"><a href="{% url 'main:essay2' %}" style="text-decoration:none;">
+            <h2 class="work-title">寄稿文</h2>
+            <p class="work-explain">
+              松本家に関わる9名が、葛尾村および松本家をめぐる思いを文章で表現した。
+              松本家との出会いやその経緯、そして今どのような思いで関わりを続けているのかなど、
+              9名それぞれの視点から見た現在地がそれぞれの言葉で綴られている。
+            </p>
+            <div class="work-img2">
+              <img class="work-cover" src="{% static 'main/images/essay/cover.jpg' %}" alt="">
+            </div>
+          </a></div>
+
+        </div>
+
+        <div class="return-web">
+          <p><a href="{% url 'main:index' %}">松本家通信TOPに戻る</a></p>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

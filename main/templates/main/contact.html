@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>CONTACT | 松本家通信</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'main/images/favicon.png' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+  <body>
+    <header class="page-header wrapper1">
+      <h1 class="logo" style="text-align: center"><a href="{% url 'main:index' %}">松本家通信<span class="logo-line">｜</span></a></h1>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="{% url 'main:about' %}">ABOUT</a></li>
+          <li><a href="{% url 'main:news' %}">NEWS</a></li>
+          <li><a href="{% url 'main:work' %}">WORK</a></li>
+          <li><a href="{% url 'main:essay' %}">ESSAY</a></li>
+          <li><a href="{% url 'main:movie' %}">MOVIE</a></li>
+          <li><a href="{% url 'main:contact' %}">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="contact" class="big-bg">
+      <div class="wrapper">
+        <h2 class="page-title">CONTACT</h2>
+      </div><!--/.wrapper-->
+    </div><!--/#home-->
+
+    <div class="contact-contents wrapper">
+      <p>ご連絡は下記のメールアドレスまたはTwitterのダイレクトメッセージまでお願いいたします。</p>
+      <p class="mail">Mail: info[a]katsurao-diary.com（[a]を@に変えてください）</p>
+      <p class="twitter"> Twitter: <a href="https://twitter.com/Hiroki_Yoda" class="twitter-id">@Hiroki_Yoda</a></p>
+      <a href="https://twitter.com/Hiroki_Yoda?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Hiroki_Yoda</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+
+    <footer>
+      <div class="wrapper">
+        <p><small>&copy; 2021 松本家計画</small></p>
+      </div>
+    </footer>
+
+  </body>
+</html>

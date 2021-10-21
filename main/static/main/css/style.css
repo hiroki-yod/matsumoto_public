@@ -1,0 +1,701 @@
+@charset "UTF-8";
+
+/*共通部分*/
+html{
+  font-size: 100%;
+}
+header{
+  background-color: #000;
+}
+body{
+  font-family: "Noto Serif JP","Merriweather",sans-serif;
+  line-height: 1.7;
+  color: #FFF;
+}
+a{
+  text-decoration: none;
+  color: #FFF;
+}
+img{
+  max-width: 100%;
+}
+
+
+/*HEADER*/
+
+.logo{
+  font-family: 'Noto Serif JP',serif;
+  width:240px;
+  font-weight: 250;
+  margin: 14px 0px;
+  color: #FFF;
+}
+.logo-line{
+  color: #a9a9a9;
+}
+
+.main-nav{
+  display: flex;
+  font-size: 1.25rem;
+  font-family: 'Merriweather',serif;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+.main-nav li{
+  margin-left: 36px;
+}
+.main-nav a{
+  color: #FFF;
+}
+.main-nav a:hover{
+  color: #999933;
+}
+.home-header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #00000000;
+}
+.page-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper1{
+  margin: 0 auto;
+  padding: 0 4%;
+}
+.wrapper{
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+
+
+/*見出し*/
+.home-title{
+  font-size: 4rem;
+  font-family:'Noto Serif JP',serif;
+  font-weight: 400;
+  padding: 27px 54px 54px 18px;
+}
+
+.home-sentence{
+  display: flex;
+  align-items: flex-end;
+}
+.home-date{
+  margin:10px 0px 10px 60px;
+  font-size: 1.5rem;
+}
+.home-site{
+  margin:10px 0px 10px 60px;
+  font-size: 1.5rem;
+}
+.home-date1{
+  font-size: 2.5rem;
+}
+.tri-date{
+  font-size: 1rem;
+}
+.tri-time{
+  font-size: 0.75rem;
+}
+.home-adress{
+  font-size: 1rem;
+}
+.home-site1{
+  margin-bottom: 10px;
+}
+.home-site2{
+  margin-bottom: 20px;
+}
+.home-site br{
+  display: none;
+}
+
+
+/*ボタン*/
+.button{
+  font-size: 1.375rem;
+  font-family: 'Noto Serif JP',serif;
+  background: #666600;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 24px;
+  margin:50px 100px;
+  text-align: center;
+}
+.button:hover{
+  background: #999933;
+}
+.two-button{
+  display: flex;
+  list-style: none;
+}
+
+
+/*大きな背景画像*/
+.big-bg{
+  background-size: contain;
+  background-position: center top;
+  background-repeat: repeat;
+}
+#home{
+  background-image: url(../images/home-bg.jpg);
+  min-height: 100vh;
+  padding-bottom: 30px;
+}
+#home .home-title{
+  text-transform: none;
+}
+
+
+/*ABOUT　ヘッダー*/
+#about{
+  background-image: url(../images/about/about-hd.jpg);
+  height: 180px;
+  background-size: cover;
+}
+#about .page-title{
+  text-align: center;
+  font-weight: 300;
+  font-size: 3.25rem;
+  padding-top: 30px;
+}
+
+
+/*フッター*/
+footer{
+  background: #000;
+  text-align: center;
+  padding: 26px 0;
+}
+footer p{
+  color: #FFF;
+  font-size: 0.875rem;
+}
+
+
+/*ABOUT本文*/
+.about-contents{
+  margin-top: 50px;
+  justify-content:center;
+  background-color: #FFF;
+}
+
+.block-title{
+  position: relative;
+  padding-top: 4px;
+  margin-bottom: 40px;
+  font-family: 'Noto Serif JP',serif;
+  font-weight: 300;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+.block-contents{
+  justify-content:center;
+  display: flex;
+}
+.about-sentence1{
+  width:93%;
+  color: #000;
+  text-align: left;
+  font-family: 'Noto Serif JP',serif;
+  margin-bottom: 50px;
+}
+.about-sentence2{
+  color: #000;
+  font-family: 'Noto Serif JP',serif;
+}
+.about-sentence1 p{
+  margin-bottom: 35px;
+}
+.about-hr{
+  margin-bottom: 35px;
+}
+.block-images{
+  width: 30%;
+  color: #000;
+  margin-left: 150px;
+  text-align: right;
+  font-family: 'Noto Serif JP',serif;
+}
+.block-contents iframe{
+  width:100%;
+  height: 50%;
+  margin-bottom: 50px;
+}
+
+.profile{
+  margin-top: 50px;
+}
+.profile-name{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.profile-contents{
+  margin: 0 0 80px;
+  display: flex;
+  justify-content:center;
+  flex-direction: row;
+}
+.profile-sentence{
+  width:60%;
+  color: #000;
+  text-align: left;
+  font-family: 'Noto Serif JP',serif;
+}
+.profile-sentence p{
+  margin-bottom: 15px;
+}
+.profile-contents img{
+  width: 30%;
+  height: 25%;
+  color: #000;
+  margin-left: 50px;
+  text-align: right;
+  font-family: 'Noto Serif JP',serif;
+}
+
+
+
+/*NEWS ヘッダー*/
+#news{
+  background-image: url(../images/news/news-hd.jpg);
+  height: 180px;
+  background-size: cover;
+}
+#news .page-title{
+  text-align: center;
+  font-weight: 250;
+  font-size: 3.25rem;
+  padding-top: 30px;
+}
+
+
+/*NEWS　本文*/
+.all-news-contents{
+  justify-content:center;
+  margin:100px;
+}
+.news{
+  flex-direction: row;
+}
+.news-explanation{
+  font-size: 1.25rem;
+  font-family: 'Noto Serif JP',serif;
+  color: #000;
+  margin: 50px 0px;
+}
+.url{
+  font-size: 1rem;
+  font-family: 'Noto Serif JP',serif;
+  color: #000;
+  margin:0px 0px 50px 0px;
+}
+.url:hover{
+  color: #0000FF;
+  font-weight: bold;
+}
+.news-contents{
+  justify-content:center;
+  display: block;
+  margin-top: 50px;
+}
+.contents-block{
+  display: flex;
+  margin: 50px 4%;
+}
+.news-name{
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.news-sentence{
+  width:70%;
+  color: #000;
+  text-align: left;
+  font-family: 'Noto Serif JP',serif;
+}
+.news-sentence p{
+  margin-bottom: 15px;
+}
+.news-contents img{
+  width: 30%;
+  height: 100%;
+  margin-left: 50px;
+}
+.news-hr{
+  margin-bottom: 35px;
+}
+.news-br{
+  display: none;
+}
+
+/*WORK ヘッダー*/
+#work{
+  background-image: url(../images/work/work-hd.jpg);
+  height: 180px;
+  background-size: cover;
+}
+#work .page-title{
+  text-align: center;
+  font-weight: 250;
+  font-size: 3.25rem;
+  padding-top: 30px;
+}
+
+
+/*ESSAY　ヘッダー*/
+#essay{
+  background-image: url(../images/essay/essay-hd.jpg);
+  height: 180px;
+  background-size: cover;
+}
+#essay .page-title{
+  text-align: center;
+  font-weight: 250;
+  font-size: 3.25rem;
+  padding-top: 30px;
+}
+
+/*ESSAY　本文*/
+.essay-contents{
+  justify-content:center;
+  margin-top: 50px;
+}
+.essay-explanation{
+  font-size: 1.25rem;
+  font-family: 'Noto Serif JP',serif;
+  color: #000;
+}
+.note-grid{
+  display: grid;
+  gap: 75px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin:50px 0px;
+}
+.note{
+  font-family: 'Noto Serif JP',serif;
+  color: #000;
+}
+
+
+/*VLOG　ヘッダー*/
+#movie{
+  background-image: url(../images/movie/movie-hd.jpg);
+  height: 180px;
+  background-size: cover;
+}
+#movie .page-title{
+  text-align: center;
+  font-weight: 300;
+  font-size: 3.25rem;
+  padding-top: 30px;
+}
+
+
+/*VLOG　本文*/
+.movie-contents{
+  justify-content:center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.movie-explanation{
+  font-size: 1.25rem;
+  font-family: 'Noto Serif JP',serif;
+  color: #000;
+}
+
+.youtube-grid{
+  display: grid;
+  gap: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 50px;
+}
+
+.youtube{
+  font-family: 'Noto Serif JP',serif;
+  color:#000;
+}
+
+.movie-title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/*CONTACT　ヘッダー*/
+#contact{
+  background-image: url(../images/contact/contact-hd.jpg);
+  height: 180px;
+  background-size: cover;
+}
+#contact .page-title{
+  text-align: center;
+  font-weight: 300;
+  font-size: 3.25rem;
+  padding-top: 30px;
+}
+
+.contact-contents{
+  justify-content:center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.contact-contents p{
+  font-family: 'Noto Serif JP',serif;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.twitter-id{
+  font-family: 'Noto Serif JP',serif;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.contact-contents a:hover{
+  color:#00a0dc;
+  font-weight: bold;
+}
+
+.mail{
+  padding-left: 20px;
+}
+.twitter{
+  padding-left: 20px;
+}
+.twitter-box{
+  width: 30%;
+  margin-top: 100px
+}
+
+
+/*モバイル版*/
+@media (max-width:800px) {
+  /*logo*/
+  .logo{
+    display: block;
+    font-family: 'Noto Serif JP',serif;
+    width:240px;
+    font-weight: 250;
+    margin:0px auto 14px auto;
+    color: #FFF;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .logo a{
+    color: #FFF;
+  }
+  .logo-line{
+    display: none;
+  }
+  .home-header{
+    display: block;
+  }
+  .page-header{
+    display: block;
+  }
+
+  /*ヘッダー*/
+    .main-nav{
+      font-size: 1rem;
+      margin-top: 10px;
+      flex-wrap: wrap;
+    }
+    .main-nav li{
+      margin: 0 20px 10px;
+      color: #c0c0c0;
+    }
+
+  /*HOME*/
+  .home-title{
+    font-size: 2.5rem;
+    font-family:'Noto Serif JP',serif;
+    font-weight: 400;
+    padding: 30px;
+    color: #FFF;
+  }
+  .space{
+    display: none;
+  }
+  .home-sentence{
+    margin: 30px 10px;
+    display: block;
+    align-items: baseline;
+  }
+  .home-sentence p{
+    padding-bottom: 10px;
+    color: #c0c0c0;
+  }
+  .home-date{
+    margin: 0px;
+    font-size: 1rem;
+  }
+  .home-site{
+    margin: 0px;
+    font-size: 1rem;
+  }
+  .home-date1{
+    font-size: 2rem;
+  }
+  .tri-date{
+    font-size: 0.75rem;
+  }
+  .tri-time{
+    font-size: 0.5rem;
+  }
+  .home-adress{
+    font-size: 0.75rem;
+  }
+  .home-site1{
+    margin-bottom: 10px;
+  }
+  .home-site2{
+    margin-bottom: 20px;
+  }
+  .home-site br{
+    display: none;
+  }
+
+
+  /*ボタン*/
+  .two-button{
+    display: block;
+  }
+  .button{
+    font-size: 1.375rem;
+    font-family: 'Noto Serif JP',serif;
+    background: #666600;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 24px;
+    margin:20px;
+    text-align: center;
+  }
+
+  /*ABOUT*/
+  .about-contents{
+    justify-content:center;
+    margin: 60px 20px;
+  }
+  .block-contents{
+    flex-direction: column;
+    align-items: center;
+  }
+  .block-contents iframe{
+    display: none;
+  }
+  .block-contents img{
+    width:90%;
+    height: 63%;
+    margin: 0 auto;
+  }
+  .about-sentence1{
+    width:90%;
+    color: #000;
+    text-align: left;
+    font-family: 'Noto Serif JP',serif;
+  }
+  .about-sentence2{
+    width:90%;
+    color: #000;
+    text-align: left;
+    font-family: 'Noto Serif JP',serif;
+  }
+  .profile-contents{
+    margin: 0 0 80px;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+  }
+  .profile-sentence{
+    width:100%;
+    color: #000;
+    text-align: left;
+    font-family: 'Noto Serif JP',serif;
+  }
+  .profile-contents img{
+    width: 100%;
+    color: #000;
+    margin: 0;
+    text-align: right;
+    font-family: 'Noto Serif JP',serif;
+  }
+
+  /*NEWS*/
+  .news-explanation{
+    font-size: 1.25rem;
+    font-family: 'Noto Serif JP',serif;
+    color: #000;
+    margin: 0px 0px 10px 10px;
+  }
+  .news-contents{
+    justify-content:center;
+    display: block;
+    margin-top: 50px;
+  }
+  .contents-block{
+    display: block;
+    justify-content:center;
+    flex-direction: column;
+  }
+  .news-br{
+    display: inline;
+  }
+  .news-sentence{
+    width:100%;
+    color: #000;
+    text-align: left;
+    font-family: 'Noto Serif JP',serif;
+  }
+  .news-contents img{
+    width: 100%;
+    color: #000;
+    margin: 0;
+    text-align: right;
+    font-family: 'Noto Serif JP',serif;
+  }
+  .news-hr{
+    margin-bottom: 35px;
+    margin-left: 0px;
+  }
+
+  /*WORK*/
+  .work-contents{
+    justify-content:center;
+    margin: 60px 20px;
+  }
+
+  /*ESSAY*/
+  .essay-contents{
+    justify-content:center;
+    margin: 60px 20px;
+  }
+
+  /*MOVIE*/
+  .movie-contents{
+    justify-content:center;
+    margin: 100px 20px;
+  }
+
+  /*CONTACT*/
+  .contact-contents{
+    justify-content:center;
+    margin: 60px 20px;
+    min-height: 50vh;
+  }
+
+  /*SECRET*/
+  .secret-contents{
+    justify-content:center;
+    margin: 60px 20px;
+  }
+}

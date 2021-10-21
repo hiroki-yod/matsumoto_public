@@ -1,0 +1,8 @@
+松本家通信の掲示板に投稿がありました。
+https://katsurao-diary.com/
+
+【投稿者】
+{{ bbs.created_by.penname }}
+
+【投稿内容】
+{{ bbs.description | linebreaksbr }}

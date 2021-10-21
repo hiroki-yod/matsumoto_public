@@ -1,0 +1,61 @@
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SIGNUP | 松本家通信</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'accounts/css/style.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'accounts/images/favicon.png' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <header class="page-header wrapper1">
+      <h1 class="logo"><a href="{% url 'main:index' %}">松本家通信<span class="logo-line">｜</span></a></h1>
+      <ul class="navbar">
+        {% if user.is_authenticated %}
+        <li class="nav-item"><a href="{% url 'logout' %}">ログアウト</a></li>
+        {% else %}
+        <li class="nav-item"><a href="{% url 'login' %}">ログイン</a></li>
+        <li class="nav-item"><a href="{% url 'signup' %}">会員登録</a></li>
+        {% endif %}
+      </ul>
+    </header>
+
+    <div id="secret" class="big-bg">
+      <div class="wrapper">
+        <h2 class="page-title">会員登録</h2>
+      </div><!--/.wrapper-->
+    </div><!--/#home-->
+
+    <form method="post">
+      {% csrf_token %}
+      <p class="login-tag">ユーザー名</p>
+      <div class="login-form">{{ form.username }}</div>
+      <p class="signup-caution">この項目は必須です。半角アルファベット、半角数字、@/./+/-/_ で150文字以下にしてください。</p>
+      <p class="login-tag">パスワード</p>
+      <div class="login-form">{{ form.password1 }}</div>
+      <ul class="signup-caution-list">
+        <li>あなたの他の個人情報と似ているパスワードにはできません。</li>
+        <li>パスワードは最低 8 文字以上必要です。</li>
+        <li>よく使われるパスワードにはできません。</li>
+        <li>数字だけのパスワードにはできません。</li>
+      </ul>
+      <p class="login-tag">パスワード（確認用）</p>
+      <div class="login-form">{{ form.password2 }}</div>
+      <p class="signup-caution">確認のため、再度パスワードを入力してください。</p>
+      <input class="signup-button" type="submit" value="会員登録">
+    </form>
+
+    <footer>
+      <div class="wrapper">
+        <p><small>&copy; 2021 松本家計画</small></p>
+      </div>
+    </footer>
+  </body>
+</html>

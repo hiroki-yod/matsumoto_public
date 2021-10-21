@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+/*共通部分*/
+html{
+  font-size: 100%;
+}
+header{
+  background-color: #000;
+}
+body{
+  font-family: "Noto Serif JP","Merriweather",sans-serif;
+  line-height: 1.7;
+  color: #FFF;
+}
+a{
+  text-decoration: none;
+  color: #FFF;
+}
+img{
+  max-width: 100%;
+}
+
+
+
+/*HEADER*/
+.wrapper{
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+.wrapper1{
+  margin: 0 auto;
+  padding: 0 4%;
+}
+.page-header{
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  font-family: 'Noto Serif JP',serif;
+  width:240px;
+  font-weight: 250;
+  margin: 14px 0px;
+  color: #FFF;
+}
+.logo-line{
+  color: #a9a9a9;
+}
+.navbar{
+  margin-top: 21px;
+  list-style: none;
+}
+.nav-item{
+  margin-left: 30px;
+  display: inline;
+}
+.nav-item a{
+  font-size: 1.5rem;
+  color: #a9a9a9;
+}
+
+
+/*フッター*/
+footer{
+  background: #000;
+  text-align: center;
+  padding: 26px 0;
+}
+footer p{
+  color: #FFF;
+  font-size: 0.875rem;
+}
+
+
+/*SECRET HEADER*/
+#secret{
+  background-image: url(../images/secret-hd.jpg);
+  height: 180px;
+  background-size: cover;
+}
+#secret .page-title{
+  text-align: center;
+  font-weight: 300;
+  font-size: 3.25rem;
+  padding-top: 30px;
+}
+
+/*ログイン*/
+.login-tag{
+  margin: 30px 20% 0px;
+  font-size: 1.25rem;
+  color: #000;
+}
+.login-form{
+  padding: 10px 20px;
+  margin: 15px 20% 0px;
+  border-radius: 10px;
+  border: solid 1px #000;
+}
+.login-button{
+  color: #FFF;
+  background-color: #666600;
+  width: 125px;
+  border-radius: 25px;
+  margin: 45px 0 45px 20%;
+}
+.login-button:hover{
+  background-color: #999933;
+}
+
+
+/*会員登録*/
+.signup-caution{
+  font-size: 0.8rem;
+  margin: 10px 0 60px 20%;
+  color: #000;
+}
+.signup-caution-list{
+  font-size: 0.8rem;
+  margin: 10px 0 60px 22.5%;
+  color: #000;
+}
+.signup-button{
+  color: #FFF;
+  background-color: #666600;
+  width: 125px;
+  border-radius: 25px;
+  margin: 0px 0 45px 20%;
+}
+.signup-button:hover{
+  background-color: #999933;
+}
+
+
+/*プロフィール*/
+.profile-image{
+  margin: 15px 0 10px 20%;
+  color: #000;
+}
+.profile-image a{
+  color: #000;
+}
+.profile-button{
+  color: #FFF;
+  background-color: #666600;
+  width: 200px;
+  border-radius: 25px;
+  margin: 0px 0 45px 20%;
+}
+.profile-button:hover{
+  background-color: #999933;
+}
+
+
+/*通知設定*/
+.notice-form{
+  margin: 15px 20% 0px;
+  height: 30px;
+  width: 30px;
+}

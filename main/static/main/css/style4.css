@@ -1,0 +1,408 @@
+@charset "UTF-8";
+
+/*共通部分*/
+html{
+  font-size: 100%;
+}
+header{
+  background-color: #000;
+}
+body{
+  font-family: "Noto Serif JP","Merriweather",sans-serif;
+  line-height: 1.7;
+  color: #FFF;
+}
+a{
+  text-decoration: none;
+  color: #FFF;
+}
+img{
+  max-width: 100%;
+}
+.big-bg{
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+
+/*HEADER*/
+.logo{
+  font-family: 'Noto Serif JP',serif;
+  width: 360px;
+  font-weight: 250;
+  margin: 14px 0px;
+  color: #FFF;
+}
+.logo-line{
+  color: #a9a9a9;
+}
+
+.main-nav{
+  display: flex;
+  font-size: 1.25rem;
+  font-family: 'Merriweather',serif;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+.main-nav li{
+  margin-left: 36px;
+}
+.main-nav a{
+  color: #FFF;
+}
+.main-nav a:hover{
+  color: #999933;
+}
+
+.page-header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper1{
+  margin: 0 auto;
+  padding: 0 4%;
+}
+.wrapper{
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/*フッター*/
+footer{
+  background: #000;
+  text-align: center;
+  padding: 26px 0;
+}
+footer p{
+  color: #FFF;
+  font-size: 0.875rem;
+}
+
+
+/*案内 ヘッダー*/
+#info{
+  background-image: url(../images/exhibition1-hd.jpg);
+  height: 180px;
+}
+#info .page-title{
+  text-align: center;
+  font-weight: 250;
+  font-size: 3.25rem;
+  font-family: 'Noto Serif JP',serif;
+  padding-top: 30px;
+}
+
+
+/*第1回松本家展*/
+.explanation{
+  display: flex;
+}
+.ex-poster{
+  width: 40%;
+  margin-left: 50px;
+}
+.ex-sentence{
+  width: 60%;
+  margin-left: 30px;
+}
+.ex-sentence p{
+  color: #000;
+  text-align: left;
+  font-family: 'Noto Serif JP',serif;
+}
+.ex-sentence1{
+  margin-left: 30px;
+  margin-top: 35px;
+}
+.ex-sentence2{
+  margin-left: 30px;
+  margin-top: 35px;
+}
+.ex-button1{
+  font-size: 1.375rem;
+  font-family: 'Noto Serif JP',serif;
+  background: #666600;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px 24px;
+  margin:75px 30px 0px 30px;
+  text-align: center;
+}
+.ex-button1:hover{
+  background: #999933;
+}
+.info-block{
+  display: flex;
+}
+
+
+/*ABOUT本文*/
+.about-contents{
+  justify-content:center;
+  margin: 50px 100px;
+  background-color: #FFF;
+}
+
+.block-title{
+  position: relative;
+  padding-top: 4px;
+  margin-bottom: 40px;
+  font-family: 'Noto Serif JP',serif;
+  font-weight: 300;
+  color: #000;
+  border-bottom: 1px solid #000;
+}
+.block-contents{
+  justify-content:center;
+  display: flex;
+}
+.about-sentence1{
+  width:93%;
+  color: #000;
+  text-align: left;
+  font-family: 'Noto Serif JP',serif;
+  margin-bottom: 50px;
+}
+.about-sentence2{
+  color: #000;
+  font-family: 'Noto Serif JP',serif;
+}
+.about-sentence1 p{
+  margin-bottom: 35px;
+}
+.about-hr{
+  margin-bottom: 35px;
+}
+.block-images{
+  width: 30%;
+  color: #000;
+  margin-left: 150px;
+  text-align: right;
+  font-family: 'Noto Serif JP',serif;
+}
+.block-contents iframe{
+  width:100%;
+  height: 50%;
+  margin-bottom: 50px;
+}
+
+
+/*guide*/
+.pre-guide{
+  position: relative;
+  padding-top: 4px;
+  margin-bottom: 40px;
+  font-family: 'Noto Serif JP',serif;
+  font-weight: 300;
+  color: #000;
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+
+/*ESSAY ヘッダー*/
+.essay-sentence{
+  width: 65%;
+  margin-right: 50px;
+  font-size: 1.25rem;
+  color: #000;
+}
+.essay-cover{
+  width: 30%;
+  border: 0.5px solid black;
+}
+.essay-index{
+  margin-top: 75px;
+}
+.index-list{
+  margin-left: 75px;
+  margin-right: 50px;
+  color: #000;
+  font-size: 1.25rem;
+  list-style: none;
+}
+.index-list li{
+  margin-bottom: 20px;
+  border-bottom: 0.1px solid #000;
+}
+.index-list a{
+  color: #000;
+}
+.index-list a:hover{
+  font-weight: bold;
+}
+
+
+/*モバイル版*/
+@media (max-width:800px) {
+  /*logo*/
+  .logo{
+    display: block;
+    font-family: 'Noto Serif JP',serif;
+    width:240px;
+    font-weight: 250;
+    margin:0px auto 0px auto;
+    padding: 10px 0px;
+    color: #FFF;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .logo a{
+    color: #FFF;
+  }
+  .logo-line{
+    display: none;
+  }
+  .home-header{
+    display: block;
+  }
+  .page-header{
+    display: block;
+  }
+
+  /*ヘッダー*/
+  .main-nav{
+    font-size: 1rem;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+  .main-nav li{
+    margin: 0 20px 10px;
+    color: #c0c0c0;
+  }
+  #info .page-title{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  #info{
+    height: 120px;
+  }
+
+  /*ABOUT*/
+  .about-contents{
+    justify-content:center;
+    margin: 60px 20px;
+  }
+  .block-contents{
+    flex-direction: column;
+    align-items: center;
+  }
+  .block-contents iframe{
+    display: none;
+  }
+  .block-contents img{
+    width:90%;
+    height: 63%;
+    margin: 0 auto;
+  }
+  .about-sentence1{
+    width:90%;
+    color: #000;
+    text-align: left;
+    font-family: 'Noto Serif JP',serif;
+  }
+  .about-sentence2{
+    width:90%;
+    color: #000;
+    text-align: left;
+    font-family: 'Noto Serif JP',serif;
+  }
+  .profile-contents{
+    margin: 0 0 80px;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+  }
+  .profile-sentence{
+    width:100%;
+    color: #000;
+    text-align: left;
+    font-family: 'Noto Serif JP',serif;
+  }
+  .profile-contents img{
+    width: 100%;
+    color: #000;
+    margin: 0;
+    text-align: right;
+    font-family: 'Noto Serif JP',serif;
+  }
+  .explanation{
+    display: block;
+  }
+  .ex-poster{
+    width: 100%;
+    margin: 0px;
+  }
+  .ex-sentence{
+    width: 100%;
+    margin-left: 0px;
+  }
+  .ex-sentence p{
+    color: #000;
+    text-align: left;
+    font-family: 'Noto Serif JP',serif;
+  }
+  .ex-sentence1{
+    width: 100%;
+    margin-left: 15px;
+    margin-top: 15px;
+  }
+  .ex-sentence2{
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+  .ex-button1{
+    font-size: 1.375rem;
+    font-family: 'Noto Serif JP',serif;
+    background: #666600;
+    color: #fff;
+    border-radius: 5px;
+    padding: 8px 24px;
+    margin:25px 10px 0px 10px;
+    text-align: center;
+  }
+  .ex-button1:hover{
+    background: #999933;
+  }
+  .info-block{
+    width: 100%;
+  }
+
+  /*ESSAY ヘッダー*/
+  .essay-sentence{
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #000;
+  }
+  .essay-cover{
+    width: 100%;
+    border: 0.5px solid black;
+  }
+  .essay-index{
+    margin-top: 75px;
+  }
+  .index-list{
+    margin-left: 40px;
+    margin-right: 20px;
+    color: #000;
+    font-size: 1rem;
+    list-style: none;
+  }
+  .index-list li{
+    margin-bottom: 20px;
+    border-bottom: 0.1px solid #000;
+  }
+  .index-list a{
+    color: #000;
+  }
+  .index-list a:hover{
+    font-weight: bold;
+  }
+}

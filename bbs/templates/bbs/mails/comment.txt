@@ -1,0 +1,11 @@
+松本家通信であなたの投稿にコメントがありました。
+https://katsurao-diary.com/
+
+【投稿者】
+{{ comment.commented_by.penname }}
+
+【コメント内容】
+{{ comment.text }}
+
+【元投稿】
+{{ bbs.description | linebreaksbr }}

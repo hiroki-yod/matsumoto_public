@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>ABOUT | 松本家通信</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'main/images/favicon.png' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+  <body>
+    <header class="page-header wrapper1">
+      <h1 class="logo" style="text-align: center"><a href="{% url 'main:index' %}">松本家通信<span class="logo-line">｜</span></a></h1>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="{% url 'main:about' %}">ABOUT</a></li>
+          <li><a href="{% url 'main:news' %}">NEWS</a></li>
+          <li><a href="{% url 'main:work' %}">WORK</a></li>
+          <li><a href="{% url 'main:essay' %}">ESSAY</a></li>
+          <li><a href="{% url 'main:movie' %}">MOVIE</a></li>
+          <li><a href="{% url 'main:contact' %}">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="about" class="big-bg">
+      <div class="wrapper">
+        <h2 class="page-title">ABOUT</h2>
+      </div><!--/.wrapper-->
+    </div><!--/#home-->
+
+    <div class="about-contents wrapper">
+      <div class="what">
+        <div class="block-contents">
+          <div class="about-sentence1">
+            <p>
+              想像してください。</br> 人に住まれなくなった家がなくなっていくとしたら。</br>
+              想像してください。</br> 人に住まれなくなった村がなくなっていくとしたら。</br>
+              想像してください。</br>そこを訪れた若者たちがそんな場所をかけがえがないと感じているとしたら。
+            </p>
+            <hr class="about-hr">
+            <p>
+              その家は福島県葛尾村の北の端にあります。松本さん一家が住んでいたので私たちは松本家と呼んでいます。
+              時には別の名前で呼ばれることもありますが、その話は、またいずれ。葛尾村はかつては1400人ほどが住む農村でした。
+              2011年の東日本大震災での福島第一原発事故によって全村避難となり誰も住めない村になりました。避難指示は村の一部を除いて2016年6月に解除されました。
+              現在では400人ほどが村内で暮らしています。それでも村の全地域に住めるようになったわけではありません。
+              今でも村北東の野行地区は帰宅困難地域に指定されています。そしてその境界は松本家のすぐ目の前にあります。
+            </p>
+            <p>
+              私たちは時々集まって松本家に泊まりにいきます。村の中心からもさらに遠い松本家で、全国から集まった私たちは話し食べ飲み、眠ります。
+              なぜ私たちは松本家に集まるのでしょうか。葛尾村に集まるのでしょうか。村は昔から外から人が来ることで成り立ってきたと言えるかもしれません。
+              縄文遺跡や中世の邸跡にその痕跡を見ることができます。私たちもその系譜に連なっているのでしょうか。あるいは、私たちは松本家に何か特別な愛着を感じているのでしょうか。
+            </p>
+            <p>
+              このWebサイトでは、松本家を舞台にした私たちの活動や、そこから生まれた調査や作品をご覧になれます。
+              会員限定ページではイベント情報を受け取ることができます。それらの一つ一つが小さな記録の集積となり松本家を物語ることになるでしょう。
+              このサイトをご覧になったあなたがいつか、松本家の語り部に加わってくださることを願っています。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="profile">
+        <h2 class="block-title">■ Profile</h2>
+        <div class="block-contents">
+          <div class="about-sentence2">
+            <div class="profile-contents">
+              <div class="profile-sentence">
+                <p class="profile-name">松本隼也（まつもととしや）</p>
+                <p>
+                  1994年生まれ。福島県葛尾村出身。神奈川県在住。松本家次男。
+                </p>
+                <p>
+                  家の目の前が縄文時代の遺跡の跡地であるため、幼少期から「縄文」に興味を持つようになる。
+                  そんな縁もあり、國學院大學に進学して考古学を専攻する。
+                  卒業後は民間企業に就職し、リフォームの営業マンと、地元葛尾村の民間団体「葛力創造舎」のスタッフとしてそれぞれ一年半の勤務を経て、現職(第一次産業専門のコンサル会社)に就く。
+                  自分の生まれ育った家でもある”松本家”を中心として、そこに集うメンバー達と幸せにイキイキと楽しく暮らせるような未来を模索中。
+              </div>
+              <img src="{% static 'main/images/about/profile-tm.jpg' %}" alt="プロフィール" class="profile-image">
+            </div>
+            <div class="profile-contents">
+              <div class="profile-sentence">
+                <p class="profile-name">筏千丸（いかだちまる）</p>
+                <p>
+                  2000年生まれ。東京都出身。早稲田大学創造理工学部建築学科在籍。
+                </p>
+                <p>
+                  両親の影響から幼少期より建築物に親しむ。
+                  高校時代には奥多摩の古民家に住み込み、自然の中で遊びながら建物を観察する。
+                  浪人時代に稲刈りイベントに参加したことをきっかけに葛尾村を訪れるようになる。
+                  以降、長期休暇のたびに家具設計・制作や売店のモデリングをしながら葛尾村に滞在している。自称建築オタク。
+                </p>
+              </div>
+              <img src="{% static 'main/images/about/profile-ci.jpg' %}" alt="プロフィール" class="profile-image">
+            </div>
+            <div class="profile-contents">
+              <div class="profile-sentence">
+                <p class="profile-name">余田大輝（よだひろき）</p>
+                <p>
+                  2001年生まれ。千葉県出身。慶應義塾大学経済学部在学中。
+                </p>
+                <p>
+                  高校時代、棚田への興味から友人とともに棚田用稲刈り機「弥生」の開発に取り組む。
+                  2018年、同事業にて、日本政策金融公庫主催の第5回高校生ビジネスプラン・グランプリを優勝する。
+                  同年より葛尾村を訪れており、昨年度は葛尾村の地域インターン事業等に携わりながら、千葉県と葛尾村の2拠点生活をしていた。
+                  現在は大学に通いながら、卒業後の葛尾村での暮らし方を模索している。
+                </p>
+              </div>
+              <img src="{% static 'main/images/about/profile-hy.jpg' %}" alt="プロフィール">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="wrapper">
+        <p><small>&copy; 2021 松本家計画</small></p>
+      </div>
+    </footer>
+  </body>
+</html>

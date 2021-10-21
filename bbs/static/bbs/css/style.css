@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+/*共通部分*/
+html{
+  font-size: 100%;
+}
+header{
+  background-color: #000;
+}
+body{
+  font-family: "Noto Serif JP","Merriweather",sans-serif;
+  line-height: 1.7;
+  color: #FFF;
+}
+a{
+  text-decoration: none;
+  color: #FFF;
+}
+img{
+  max-width: 100%;
+}
+
+
+
+/*HEADER*/
+.wrapper{
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.wrapper1{
+  margin: 0 auto;
+  padding: 0 4%;
+}
+.page-header{
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  font-family: 'Noto Serif JP',serif;
+  width:240px;
+  font-weight: 250;
+  margin: 14px 0px;
+  color: #FFF;
+}
+.logo-line{
+  color: #a9a9a9;
+}
+.navbar{
+  margin-top: 21px;
+  list-style: none;
+}
+.nav-item a{
+  font-size: 1.5rem;
+  color: #a9a9a9;
+}
+
+
+/*フッター*/
+footer{
+  background: #000;
+  text-align: center;
+  padding: 26px 0;
+}
+footer p{
+  color: #FFF;
+  font-size: 0.875rem;
+}
+
+
+/*SECRET HEADER*/
+#secret{
+  background-image: url(../images/secret-hd.jpg);
+  height: 180px;
+  background-size: cover;
+}
+#secret .page-title{
+  text-align: center;
+  font-weight: 300;
+  font-size: 3.25rem;
+  padding-top: 30px;
+}
+
+
+/*SECRET カレンダー*/
+.calendar{
+  display: block;
+  margin: 50px auto;
+  text-align: center;
+  width: 1000px;
+  height: 500px;
+}
+
+
+/*SECRET 掲示板*/
+.bbs{
+  display: flex;
+}
+
+
+/*ナビゲーション*/
+.bbs-nav{
+  width: 35%;
+  color: #000;
+  font-size: 1.5rem;
+  margin-bottom: 200px;
+}
+.bbs-nav a{
+  color: #000;
+}
+.bbs-nav-list{
+  list-style: none;
+}
+.bbs-nav-list li{
+  margin: 150px 0px 50px 100px;
+}
+.bbs-nav-list li:hover{
+  font-weight: bold;
+}
+.bbs-nav-img{
+  height: 50px;
+  margin-right: 25px;
+}
+
+
+/*ボード*/
+.bbs-board{
+  width: 65%;
+  margin: 50px 50px 0px 0px;
+  display: block;
+}
+.bbs-board-title{
+  color: #000;
+  padding: 10px;
+  border: solid 1px #000;
+  border-bottom: none;
+}
+.bbs-board-form{
+  border: solid 1px #000;
+  display: flex;
+  text-align: right;
+  border-bottom: none;
+}
+.bbs-board-profile{
+  width: 10%;
+}
+.bbs-board-profile img{
+  width: 70%;
+  margin: 15%;
+}
+.input-box{
+  resize: none;
+  margin: 20px 50px 20px 0px;
+  width: 90%;
+  height:200px;
+  vertical-align: top;
+}
+.bbs-board-sub{
+  color: #FFF;
+  background-color: #666600;
+  width: 125px;
+  border-radius: 25px;
+  margin: 10px 30px 20px;
+}
+.bbs-board-sub:hover{
+  background-color: #999933;
+}
+
+
+/*投稿一覧*/
+.bbs-post{
+  margin-bottom: 50px;
+  height: 1000px;
+  border: solid 1px #000;
+  overflow-y: scroll;
+}
+.bbs-post-tag{
+  display: flex;
+  justify-content: space-between;
+}
+.bbs-post-name{
+  color: #000;
+  margin: 10px 20px 5px 5px;
+  font-weight: bold;
+}
+.bbs-post-time{
+  font-size: 0.8rem;
+  color: #000;
+  margin: 10px 30px 5px;
+}
+.bbs-post-sen{
+  color: #000;
+  margin: 10px 20px 5px 5px;
+}
+.bbs-post-info{
+  justify-content: right;
+  display: flex;
+  margin: 0 30px 0 auto;
+}
+.bbs-post-comment{
+  text-align: right;
+  font-size: 0.8rem;
+  color: #666666;
+  margin: 10px 30px 5px;
+}
+.bbs-post-structure{
+  display: flex;
+}
+.bbs-board-post{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+/*コメント*/
+.bbs-like-form{
+  text-align: right;
+}
+.bbs-like-sub{
+  color: #FFF;
+  background-color: #666600;
+  width: 125px;
+  border-radius: 25px;
+  margin: 10px 30px 20px;
+  justify-content: right;
+}
+.bbs-like-sub:hover{
+  background-color: #999933;
+}
+.bbs-like-title{
+  font-size: 0.8rem;
+  color: #000;
+  margin: 10px 20px 5px 5px;
+}
+.bbs-like-list{
+  font-size: 0.8rem;
+  color: #000;
+  margin: 0px 20px 5px 50px;
+}
+.bbs-post-structure-detail{
+  display: flex;
+  width: 60%;
+  margin: 30px auto 0px;
+  border: solid 1px #000;
+}
+
+
+/*モバイル版*/
+@media (max-width:800px) {
+  /*ヘッダー*/
+  .logo{
+    font-size: 1.5rem;
+  }
+  .logo-line{
+    display: none;
+  }
+  .nav-item a{
+    font-size: 1rem;
+  }
+  
+  /*カレンダー*/
+  .calendar{
+    display: none;
+  }
+
+  /*ナビ*/
+  .bbs-nav{
+    display: none;
+  }
+
+  /*掲示板*/
+  .bbs-board{
+    width: 95%;
+    margin: 10px auto;
+    display: block;
+  }
+  .bbs-board-profile{
+    width: 20%;
+  }
+  .bbs-board-profile img{
+    width: 70%;
+    margin: 15%;
+  }
+  .bbs-post-time{
+    font-size: 0.5rem;
+    color: #000;
+    margin: 10px;
+  }
+  .bbs-post-comment{
+    text-align: right;
+    font-size: 0.5rem;
+    color: #666666;
+    margin: 10px 30px 5px;
+  }
+}
+
+/*コメント*/
+.bbs-post-structure-detail{
+  display: flex;
+  width: 95%;
+  margin: 10px auto 0;
+  border: solid 1px #000;
+}

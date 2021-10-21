@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>松本家通信</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'main/images/favicon.png' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+  <body>
+    <div id="home" class="big-bg">
+      <header class="home-header wrapper1">
+        <h1 class="logo" style="text-align: center"><a href="{% url 'main:index' %}">松本家通信<span class="logo-line">｜</span></a></h1>
+        <nav>
+          <ul class="main-nav">
+            <li><a href="{% url 'main:about' %}">ABOUT</a></li>
+            <li><a href="{% url 'main:news' %}">NEWS</a></li>
+            <li><a href="{% url 'main:work' %}">WORK</a></li>
+            <li><a href="{% url 'main:essay' %}">ESSAY</a></li>
+            <li><a href="{% url 'main:movie' %}">MOVIE</a></li>
+            <li><a href="{% url 'main:contact' %}">CONTACT</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="index-content wrapper">
+        <p class="home-title"><span class="space">&nbsp;&nbsp;</span>オンライン展示開催中<br>「第1回松本家展 -現在地-」</p>
+
+        <div class="home-sentence">
+          <div class="home-date">
+            <p class="home-year">2021　料金無料</p>
+            <p><span class="home-date1">8/27&nbsp;</span>㊎&nbsp;&nbsp;<span class="tri-date">▶</span>&nbsp;&nbsp;<span class="home-date1">29&nbsp;</span>㊐</p>
+          </div>
+          <div class="home-site">
+            <p class="home-site1">9:00&nbsp;<span class="tri-time">▶</span>&nbsp;17:00　<br>復興交流館あぜりあ&nbsp;<span class="home-adress">(福島県葛尾村)</span></p>
+            <p class="home-site2">0:00&nbsp;<span class="tri-time">▶</span>&nbsp;24:00　<br>オンライン展示会場&nbsp;<span class="home-adress">(松本家通信内)</span></p>
+          </div>
+        </div>
+
+        <ul class="two-button">
+          <li class="button"><a href="exhibition1.html">第1回松本家展</a></li>
+          <li class="button"><a href="{% url 'bbs:secret' %}">会員限定ページ</a></li>
+        </ul>
+      </div><!--/.home-content -->
+    </div><!--/#home-->
+  </body>
+</html>

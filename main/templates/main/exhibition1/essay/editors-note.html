@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>編集後記 | 松本家通信2021夏季号</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/style5.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'main/images/favicon.png' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+  <body>
+    <header class="page-header wrapper1">
+      <h1 class="logo"><a href="{% url 'main:essay2' %}">松本家通信2021年<span class="summer">夏季</span>号<span class="logo-line">｜</span></a></h1>
+    </header>
+
+    <div id="info" class="big-bg">
+      <div class="wrapper">
+
+      </div><!--/.wrapper-->
+    </div><!--/#home-->
+
+    <div class="about-contents wrapper">
+        <div class="block-contents">
+          <h2 class="page-title">編集後記（星葵衣）</h2>
+          <div class="about-sentence1">
+            <p>
+              　第一回松本家展の開催に合わせてこのような冊子を制作することができ、とても嬉しく思います。微塵も触ったことのない編集ソフトとひとり向き合い、冊子を編集する作業はわからないの連続でした。少々機械音痴な私では明らかに適任ではないだろうなとふてくされそうになることもありながら、なんとか冊子を完成させることができてひと安心しています。
+            </p>
+            <p>
+              　余談ですが、メンターとして葛尾村に滞在していた時にも同系列のソフトを使って動画の編集（編集とも言えないような代物でしたが、完全初心者の私にとっては立派な編集でした）を担当しています。次の日の朝までに動画を完成させなければならないということで、深夜4時頃までメンター陣に助けられ励まされながら作業を続け、書き出しの途中で寝落ちしたあの時間を思い出しました。今回はひとりで冊子の編集をしていますが、気持ちはあの時のあの時間のままのような気もしています。書いていてまた皆に会いたくなりました。
+            </p>
+            <p>
+              　さて、これからも松本家計画は続きます。私たちそれぞれの関わり方が変わったり、新しく関わり始める人が表れたり、どんな変化が待っているかは分かりませんが、ここに私たちが記録し物語った言葉たちは変わらずここに残ります。「語り部」の系譜はここに続いているのです。この冊子がその一部分として役目を果たしてくれるのであれば、編集者冥利に尽きます。
+            </p>
+            <p>
+              　改めて、冊子のコンセプトや目的から一緒に話し合いを進めてきた運営の皆さん、冊子への寄稿に協力してくださった皆さん、この冊子を手にとってくださった皆さん、関わってくださった全ての方に感謝の意を表したいと思います。本当にありがとうございました。
+            </p>
+            <div class="th-photo">
+              <img src="{% static 'main/images/essay/hoshi.jpg' %}" alt="">
+            </div>
+            <p class="return-index"><a href="{% url 'main:essay2' %}">目次に戻る</a></p>
+          </div>
+        </div>
+      </div>
+
+    <footer>
+      <div class="wrapper">
+        <p><small>&copy; 2021 松本家計画</small></p>
+      </div>
+    </footer>
+
+  </body>
+</html>

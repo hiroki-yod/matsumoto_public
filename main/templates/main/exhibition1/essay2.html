@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>寄稿文 | 第1回松本家展</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'main/css/style4.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'main/images/favicon.png' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+  <body>
+    <header class="page-header wrapper1">
+      <h1 class="logo"><a href="{% url 'main:guide' %}">第1回松本家展<span class="logo-line">｜</span></a></h1>
+    </header>
+
+    <div id="info" class="big-bg">
+      <div class="wrapper">
+        <h2 class="page-title">寄稿文</h2>
+      </div><!--/.wrapper-->
+    </div><!--/#home-->
+
+    <div class="about-contents wrapper">
+      <div class="explanation">
+        <div class="essay-sentence">
+          <p>
+            松本家に関わる9名が、葛尾村および松本家をめぐる思いを文章で表現した。
+            「第1回松本家展ー現在地ー」開催意図の紹介に始まり、松本家との出会いやその経緯、
+            そして今どのような思いで関わりを続けているのかなど、9名それぞれの視点から見た現在地がそれぞれの言葉で綴られている。
+            また、これら寄稿文は、松本家計画から初めて発行されるアナログ版松本家通信（2021年夏季号）への収録にあたり書き下ろされたものである。
+
+          </p>
+        </div>
+        <div class="essay-cover">
+          <img src="{% static 'main/images/essay/cover.jpg' %}" alt="ポスター">
+        </div>
+      </div>
+
+      <div class="essay-index">
+        <h2 class="block-title" id="index">■ 目次</h2>
+        <div class="index-div">
+          <ul class="index-list">
+            <li><a href="{% url 'main:introduction' %}">&nbsp;&nbsp;はじめに（筏千丸・余田大輝）</a></li>
+            <li><a href="{% url 'main:essay-ci' %}">　01　|　語り部たちの家（筏千丸）</li>
+            <li><a href="{% url 'main:essay-hi' %}">　02　|　松本家と私と土地（石本帆乃）</li>
+            <li><a href="{% url 'main:essay-ys' %}">　03　|　私がなぜ葛尾村に関わるのか（柴田百合子）</li>
+            <li><a href="{% url 'main:essay-rs' %}">　04　|　私と松本家とを結んだ不思議なご縁（成玲娜）</li>
+            <li><a href="{% url 'main:essay-th' %}">　05　|　私の葛尾村　出会いから今日まで（檜浦大河）</li>
+            <li><a href="{% url 'main:essay-ah' %}">　06　|　現在地の因数分解（星葵衣）</li>
+            <li><a href="{% url 'main:essay-kh' %}">　07　|　わからない（堀田滉樹）</li>
+            <li><a href="{% url 'main:essay-hy' %}">　08　|　「関係人口」として松本家にいること（余田大輝）</li>
+            <li><a href="{% url 'main:essay-tm' %}">　09　|　松本家の現在地（松本隼也）</li>
+            <li><a href="{% url 'main:editors-note' %}">&nbsp;&nbsp;編集後記（星葵衣）</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="wrapper">
+        <p><small>&copy; 2021 松本家計画</small></p>
+      </div>
+    </footer>
+
+  </body>
+</html>
