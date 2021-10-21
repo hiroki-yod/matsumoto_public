@@ -109,8 +109,13 @@ API_KEY='Youtube Data API の API_KEY'
 CHANNEL_ID='動画を取得するチャンネルのCHANNEL_ID'
 ```
 
+## 5. データベースの生成
+データベースを生成します。
+```console
+$ python manage.py migrate
+```
 
-## 5. 開発用サーバーの立ち上げ
+## 6. 開発用サーバーの立ち上げ
 Django開発用サーバーを立ち上げてアクセスする。
 ```console
 $ python manage.py runserver
