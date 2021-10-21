@@ -102,6 +102,7 @@ DEFAULT_FROM_EMAIL='任意のGmailアドレス'
 #bbs > views.py
 #Googleドライブを使用しない場合は不要
 GOOGLE_DRIVE_URL='会員限定ページのGoogleドライブURL'
+GOOGLE_CALENDAR_URL='会員限定ページのGoogleカレンダーURL'
 
 #main > modules > youtube.py
 #動画取得を使用しない場合は不要
