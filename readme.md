@@ -1,13 +1,15 @@
 # アプリケーション名
-## 松本家通信 &emsp;The Matsumoto’s House Newsletter
+**松本家通信 &emsp;The Matsumoto’s House Newsletter**  
 URL : https://katsurao-diary.com
-
+<br>
+<br>
 
 # 説明 &emsp;Description
 「松本家通信」という私が初めて制作したWebアプリケーションです。原発被災地である福島県葛尾村にて展示会などの活動を行っている松本家計画のホームページとして制作しました。作品等の情報公開機能およびメンバー限定の掲示板機能を有しています。
 
 "The Matsumoto’s House Newsletter" is the first web application I have created. This is the website of "The Matsumoto House Project" which hold exhibitions and other activities in Katsurao Village, Fukushima Prefecture, a nuclear power plant affected area. It has a function for publishing information on works, etc. and a members-only bulletin board function.
-
+<br>
+<br>
 
 # 機能一覧
 - ユーザー情報
@@ -22,7 +24,8 @@ URL : https://katsurao-diary.com
     2. コメント
     3. リアクション
     4. メール通知
-
+<br>
+<br>
 
 # 機能紹介
 ## 1. ユーザー登録
@@ -37,8 +40,7 @@ URL : https://katsurao-diary.com
 2. NEWS/WORKS/ESSAY を登録する
 3. NEWS/WORKS/ESSAYページに反映される
 ![function2](https://user-images.githubusercontent.com/77391181/138310045-ba7e3e65-42a3-49d1-b1cc-25c9d29a4cc3.gif)
-
-## 3. YouTube Data Acquisition
+## 3. YouTubeデータ取得
 1. 一般ユーザーで /manage にログインする
 2. 「YouTube更新」ボタンを押す
 3. 取得された動画がMOVIEページに反映される
@@ -54,6 +56,8 @@ URL : https://katsurao-diary.com
 7. 投稿/コメント/リアクション は設定に応じて通知される
 ![function4](https://user-images.githubusercontent.com/77391181/138312395-b36a0c6d-aae6-4c1c-9e8d-979fe3dca6d9.gif)
 
+<br>
+<br>
 
 # 実行手順（Django開発用サーバー）
 ## 1. 動作環境
@@ -70,13 +74,13 @@ $ git clone git@github.com:hiroki-yod/matsumoto_public.git
 ## 3. パッケージのインストール
 次のパッケージをインストールしてください。
 ```console
-$ pip install Django
-$ pip install django-environ                #環境変数
-$ pip install django_bootstrap5             #CSS
-$ pip install django-widget-tweaks          #CSS
-$ pip install google-api-python-client      #YouTube Data API
-$ pip install Pillow                        #画像
-$ pip install isodate                       #時間
+pip install Django
+pip install django-environ                #環境変数
+pip install django_bootstrap5             #CSS
+pip install django-widget-tweaks          #CSS
+pip install google-api-python-client      #YouTube Data API
+pip install Pillow                        #画像
+pip install isodate                       #時間
 ```
 
 ## 4. 環境変数の設定
@@ -91,13 +95,14 @@ ALLOWED_HOSTS='localhost'
 DATABASE_URL=sqlite:///db.sqlite3
 
 #通知設定を使用しない場合は不要
-EMAIL_HOST_USER='任意のGmailアドレス'
-EMAIL_HOST_PASSWORD='設定したGmailのパスワード'
-DEFAULT_FROM_EMAIL='任意のGmailアドレス'
+EMAIL_HOST_USER='dummy@gmail.com'
+EMAIL_HOST_PASSWORD='password'
+DEFAULT_FROM_EMAIL='dummy@gmail.com'
 
 #bbs > views.py
 #Googleドライブを使用しない場合は不要
 GOOGLE_DRIVE_URL='会員限定ページのGoogleドライブURL'
+GOOGLE_CALENDAR_URL='会員限定ページのGoogleカレンダーURL'
 
 #main > modules > youtube.py
 #動画取得を使用しない場合は不要
@@ -105,13 +110,18 @@ API_KEY='Youtube Data API の API_KEY'
 CHANNEL_ID='動画を取得するチャンネルのCHANNEL_ID'
 ```
 
+## 5. データベースの生成
+データベースを生成します。
+```console
+$ python manage.py migrate
+```
 
-## 5. 開発用サーバーの立ち上げ
+## 6. 開発用サーバーの立ち上げ
 Django開発用サーバーを立ち上げてアクセスする。
 ```console
 $ python manage.py runserver
 ```
-仮想環境でサーバーを起動し、ローカル環境からアクセスする場合は次のようにサーバーを立ち上げる。
+仮想環境でサーバーを起動し、ローカル環境からアクセスする場合は、次のようにサーバーを立ち上げる。
 ```console
 $ python manage.py runserver 0:8000
 ```
