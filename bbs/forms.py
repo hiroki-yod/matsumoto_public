@@ -1,7 +1,7 @@
 from django import forms
 from bbs.models import Bbs, Comment, Like
 
-
+#投稿
 class BbsForm(forms.ModelForm):
     class Meta:
         model = Bbs
@@ -11,7 +11,7 @@ class BbsForm(forms.ModelForm):
             'description': forms.Textarea(attrs={'class': 'input-box'})
         }
 
-
+#コメント
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
@@ -21,7 +21,7 @@ class CommentForm(forms.ModelForm):
             'text': forms.Textarea(attrs={'class': 'input-box'})
         }
 
-
+#リアクション
 class LikeForm(forms.ModelForm):
     class Meta:
         model = Like

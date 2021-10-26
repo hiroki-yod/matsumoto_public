@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect, render, get_object_or_404
 from profile_edit.forms import ProfileForm, NoticeForm
 
-
+#新規プロフィール設定
 @login_required
 def profile_new(request):
     if request.method == 'POST':
@@ -23,35 +23,41 @@ def profile_new(request):
     return render(request, "profile_edit/profile_new.html", {'form': form})
 
 
+#プロフィール修正
 @login_required
 def profile_edit(request, profile_id):
     profile = get_object_or_404(Profile, pk=profile_id)
+
+    #自分以外のプロフィール編集の禁止
     if profile.username != request.user:
         return HttpResponseForbidden("このプロフィールの編集は許可されていません")
     
+    #プロフィール修正の処理
     if request.method == "POST":
         form = ProfileForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
             return redirect('/secret')
-    
     else:
         form = ProfileForm(instance=profile)
     return render(request, 'profile_edit/profile_edit.html', {'form': form})
 
 
+#通知設定
 @login_required
 def notice(request, profile_id):
     profile = get_object_or_404(Profile, pk=profile_id)
+
+    #自分以外のプロフィール編集の禁止
     if profile.username != request.user:
         return HttpResponseForbidden("この通知設定の編集は許可されていません")
     
+    #通知設定の処理
     if request.method == "POST":
         form = NoticeForm(request.POST, instance=profile)
         if form.is_valid():
             form.save()
             return redirect('/secret')
-    
     else:
         form = NoticeForm(instance=profile)
     return render(request, 'profile_edit/notice.html', {'form': form})

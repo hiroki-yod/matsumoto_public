@@ -3,7 +3,7 @@ from django.core.mail import EmailMessage
 from profile_edit.models import Profile
 from django.template.loader import render_to_string
 
-
+#投稿
 def main(bbs):
     subject = "【投稿】松本家通信よりお知らせ"
     context = {'bbs':bbs}
@@ -14,7 +14,7 @@ def main(bbs):
     email = EmailMessage(subject, message, from_email, recipient_list, bcc)
     email.send()
 
-
+#コメント
 def comment(bbs, comment, poster):
     subject = "【コメント】松本家通信よりお知らせ"
     context = {'bbs':bbs, 'comment':comment}
@@ -28,6 +28,7 @@ def comment(bbs, comment, poster):
     email = EmailMessage(subject, message, from_email, recipient_list, bcc)
     email.send()
 
+#リアクション
 def like(bbs, user, poster):
     subject = "【いいね】松本家通信よりお知らせ"
     context = {'bbs':bbs, 'user':user}

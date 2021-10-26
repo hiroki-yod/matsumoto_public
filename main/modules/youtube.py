@@ -1,5 +1,6 @@
 from apiclient.discovery import build
 
+#環境変数の設定（API_KEY, CHANNEL_ID）
 import environ
 env = environ.Env()
 env.read_env('.env')
@@ -26,10 +27,12 @@ def get_youtube():
         order = "date", 
         ).execute()
  
+    #videoidの格納
     for search_result in search_response.get("items", []):
         if search_result["id"]["kind"] == "youtube#video":
             searches.append(search_result["id"]["videoId"])
 
+    #各動画情報の格納
     for result in searches:
         video_response = youtube.videos().list(
         part = 'snippet,statistics',

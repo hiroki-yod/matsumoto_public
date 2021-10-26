@@ -13,7 +13,7 @@ urlpatterns = [
     path('contact/', views.contact, name="contact"),
     path('manage/', views.manage, name="manage"),
 
-    #松本家通信2021年夏季号のQRコードのため.htmlを付ける
+    #松本家通信2021年夏季号のQRコード維持のため.htmlを付ける
     path('exhibition1.html/', views.exhibition1, name="exhibition1"),
     path('exhibition-first/guide.html/', views.guide, name="guide"),
     path('exhibition-first/model.html/', views.model, name="model"),

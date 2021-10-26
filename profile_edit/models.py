@@ -1,7 +1,7 @@
 from django.db import models
 from django.conf import settings
 
-
+#プロフィール設定+通知設定
 class Profile(models.Model):
     username = models.ForeignKey(settings.AUTH_USER_MODEL, verbose_name="ID", on_delete=models.CASCADE)
     penname = models.CharField('名前', max_length=128)

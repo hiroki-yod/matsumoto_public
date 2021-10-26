@@ -3,13 +3,7 @@ from main.models import Movie, News, OldNews, Work, OldWork, Essay
 from django.shortcuts import render
 
 
-#メインページ
-def index(request):
-    return render(request, "main/index.html")
-
-def about(request):
-    return render(request, "main/about.html")
-
+#表示以外の処理を行うページ
 def news(request):
     news = News.objects.all().order_by('created_at').reverse()
     old_news = OldNews.objects.all().order_by('created_at').reverse()
@@ -32,16 +26,24 @@ def movie(request):
     context = {"movies": movies}
     return render(request, "main/movie.html", context)
 
-def contact(request):
-    return render(request, "main/contact.html")
-
 def manage(request):
     if request.method == "POST":
-        youtube_movies = youtube.get_youtube()
+        youtube_movies = youtube.get_youtube()  #modules > youtube.py
         for movie in youtube_movies:
             if not Movie.objects.filter(movie_id=movie[2]).exists():
                 Movie.objects.create(created_at=movie[0], title=movie[1], movie_id=movie[2])
     return render(request, "main/manage.html")
+
+
+#メインページ
+def index(request):
+    return render(request, "main/index.html")
+
+def about(request):
+    return render(request, "main/about.html")
+
+def contact(request):
+    return render(request, "main/contact.html")
 
 def exhibition1(request):
     return render(request, "main/exhibition1.html")
